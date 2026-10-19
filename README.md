@@ -3,7 +3,7 @@
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/qountstat)](https://CRAN.R-project.org/package=qountstat)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-<!-- DOI-BADGE -->
+[![DOI](https://zenodo.org/badge/1425398234.svg)](https://doi.org/10.5281/zenodo.23470836)
 <!-- badges: end -->
 
 Statistical analysis of count data and quantal data in ecotoxicology.
