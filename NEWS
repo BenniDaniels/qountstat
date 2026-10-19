@@ -1,0 +1,40 @@
+qountstat 0.2.0 (2026-10-16)
+-----------------------------
+
+NEW FEATURES:
+   * New function Overdispersion.test() for a model-agnostic, simulation-calibrated diagnostic of
+     overdispersion in grouped count data (Daniels et al., 2026). The decision threshold is calibrated
+     by Monte Carlo simulation for the design at hand, which makes the diagnostic applicable to small
+     sample sizes. The test is one-sided, i.e. underdispersion is not evaluated.
+   * Dunnett.GLM gained the argument 'family', which selects a quasi-Poisson (default, as before), a
+     negative binomial or a classical Poisson regression. Dunnett.GLM.power and Dunnett.GLM.bMDD gained
+     the corresponding argument 'Dunnett.GLM.family'. The information object of Dunnett.GLM now reports
+     the distribution, the link function and the dispersion parameter that were used.
+   * CPCAT and Dunnett.GLM gained the argument 'overdispersion.test', which adds the result of the
+     overdispersion diagnostic to the information object. It is switched off by default and does not
+     change the results of the calling function when enabled.
+
+CHANGES IN BEHAVIOUR:
+   * The Hampel identifier in CPCAT is no longer evaluated by default; the default of
+     'hampel.threshold' changed from 5 to NULL. The identifier is not scale-invariant and flags
+     Poisson-distributed data as overdispersed increasingly often as the counts grow. Use
+     Overdispersion.test for a scale-invariant alternative.
+   * Counts are now rejected if any value is negative. The check used min() instead of any() and
+     therefore only triggered if all values were negative.
+   * family = 'nb' can no longer be combined with zero.treatment.action = 'identity.link' if a
+     treatment consists only of zeros, because the negative binomial dispersion parameter is not
+     identifiable when a fitted mean is zero. Use zero.treatment.action = 'log(x+1)' instead.
+
+BUG FIXES:
+   * NA values in the counts no longer cause an error; rows containing them are excluded as documented.
+     Affects CPCAT, Dunnett.GLM and the power and bMDD functions for count data.
+   * The note on excluded rows reported TRUE instead of the number of rows that were excluded.
+
+DEPENDENCIES:
+   * The package now imports MASS.
+
+
+qountstat 0.1.1 (2025-02-21)
+-----------------------------
+
+   * first version published on CRAN - 21.02.2025

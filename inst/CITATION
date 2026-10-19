@@ -1,0 +1,17 @@
+bibentry(
+	bibtype  = "Manual",
+	title    = "qountstat: Statistical Analysis of Count Data and Quantal Data",
+	author   = c(person("Benjamin", "Daniels"),
+				 person("Christian", "Dietrich"),
+				 person("Thomas", "Graeff"),
+				 person("Magnus", "Wang")),
+	year     = "2026",
+	note     = paste("R package version", meta$Version),
+	url      = "https://CRAN.R-project.org/package=qountstat",
+	# textVersion overrides the automatically generated output, which would render the
+	# title in an emphasised form and therefore surround it with underscores in the console
+	textVersion = paste0("Daniels B, Dietrich C, Graeff T, Wang M (2026). qountstat: ",
+						 "Statistical Analysis of ",
+						 "Count Data and Quantal Data. R package version ", meta$Version,
+						 ". https://CRAN.R-project.org/package=qountstat")
+)

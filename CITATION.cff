@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "qountstat: Statistical Analysis of Count Data and Quantal Data"
+version: 0.2.0
+date-released: "2026-10-16"
+license: MIT
+repository-code: "https://github.com/YOUR-GITHUB-USERNAME/qountstat"
+url: "https://CRAN.R-project.org/package=qountstat"
+abstract: >-
+  Methods for the statistical analysis of count data and quantal data in
+  ecotoxicology. Implementations of the Closure Principle Computational
+  Approach Test (CPCAT), of a Dunnett GLM approach with a quasi-Poisson,
+  negative binomial or Poisson regression, and of the Closure Principle
+  Fisher-Freeman-Halton test (CPFISH). P-values and no/lowest observed
+  (adverse) effect concentration values are calculated. A model-agnostic,
+  simulation-calibrated diagnostic for overdispersion is provided to
+  support the choice between the implemented methods.
+keywords:
+  - ecotoxicology
+  - count data
+  - NOEC
+  - overdispersion
+  - R
+authors:
+  - family-names: Daniels
+    given-names: Benjamin
+    email: benjamin.daniels@rwth-aachen.de
+    orcid: "https://orcid.org/0000-0002-8344-6141"
+  - family-names: Dietrich
+    given-names: Christian
+  - family-names: Graeff
+    given-names: Thomas
+  - family-names: Wang
+    given-names: Magnus
