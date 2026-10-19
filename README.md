@@ -37,7 +37,7 @@ The development version from GitHub:
 
 ```r
 # install.packages("remotes")
-remotes::install_github("YOUR-GITHUB-USERNAME/qountstat")
+remotes::install_github("BenniDaniels/qountstat")
 ```
 
 ## Example

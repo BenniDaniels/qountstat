@@ -7,3 +7,6 @@
 ^CITATION\.cff$
 ^\.gitignore$
 ^\.github$
+^.*\.bak$
+^.*~$
+^.*\.orig$

@@ -7,3 +7,9 @@
 # R build artefacts
 *.tar.gz
 *.Rcheck/
+
+# Editor backups
+*.bak
+*~
+*.orig
+*.swp

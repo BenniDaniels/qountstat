@@ -5,7 +5,7 @@ title: "qountstat: Statistical Analysis of Count Data and Quantal Data"
 version: 0.2.0
 date-released: "2026-10-16"
 license: MIT
-repository-code: "https://github.com/YOUR-GITHUB-USERNAME/qountstat"
+repository-code: "https://github.com/BenniDaniels/qountstat"
 url: "https://CRAN.R-project.org/package=qountstat"
 abstract: >-
   Methods for the statistical analysis of count data and quantal data in
